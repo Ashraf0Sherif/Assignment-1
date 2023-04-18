@@ -97,3 +97,71 @@ footer{
     width: 100%;
     background-color: rgb(64, 91, 224);
 }
+[data-theme="dark"] body {
+    background-color: #333;
+    color: #fff;
+}
+  
+  
+[data-theme="dark"] .navbar {
+    background-color: #222;
+    color: #fff;
+}
+[data-theme="dark"] .links li a {
+    color: #fff;
+}
+[data-theme="dark"] .container {
+    background-color: #222;
+    color: #fff;
+}
+[data-theme="dark"] form input[type="text"],
+[data-theme="dark"] form input[type="password"],
+[data-theme="dark"] form textarea {
+    background-color: #222;
+    color: #fff;
+}
+[data-theme="dark"] footer {
+    background-color: #222;
+    color: #fff;
+}
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+.toggle-label {
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+.toggle-btn {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+.toggle-btn::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+} 
+.toggle-btn:checked {
+    background-color: #222;
+}
+  
+.toggle-btn:checked::before {
+    transform: translateX(30px);
+}
+.toggle-btn:focus-visible {
+    box-shadow: 0 0 0 2px #000;
+}

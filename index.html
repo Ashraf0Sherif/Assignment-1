@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Yanone+Kaffeesatz:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
     <div class="navbar">
-        <ul class="links">
-            <li ><a href="#" class="logo">Logo</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Reviews</a></li>
-        </ul>
+      <ul class="links">
+        <li><a href="#" class="logo">Logo</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+      <div class="toggle-container">
+        <label for="toggle-btn" class="toggle-label">Dark Mode</label>
+        <input type="checkbox" id="toggle-btn" class="toggle-btn" />
+      </div>
     </div>
     <div class="container">
-        <form action="###" method="post">
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" placeholder="Type your first name" required/>
-            <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname" placeholder="Type your second name" required>
-            <div class="check">
-                <input type="checkbox" name="checkbox" id="checkbox" required>
-                <label for="checkbox">I agree to <a href="##" style="font-style: italic;">terms and conditions</a></label>
-            </div>
-                <input type="submit" name="submit" id="submit" value="Submit" required>
-        </form>
-</div> 
-<footer>
-    <p>All Copyrights reserved 	&#169; Ashraf Sherif</p>
-</footer>
-</body>
+      <form action="###" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Type your first name" required />
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Type your second name" required />
+        <div class="check">
+          <input type="checkbox" name="checkbox" id="checkbox" required />
+          <label for="checkbox">I agree to <a href="##" style="font-style: italic;">terms and conditions</a></label>
+        </div>
+        <input type="submit" name="submit" id="submit" value="Submit" required />
+      </form>
+    </div>
+    <footer>
+      <p>All Copyrights reserved &#169; Ashraf Sherif</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
